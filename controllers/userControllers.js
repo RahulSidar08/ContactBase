@@ -1,6 +1,4 @@
-// register the user
-// route GET /api/users/register
-// access public
+
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const asynchandler = require("express-async-handler");
