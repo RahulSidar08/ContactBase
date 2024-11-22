@@ -4,10 +4,6 @@ const router = express.Router();
 const asyncHandler = require("express-async-handler");
 const { model } = require("mongoose");
 const contactmodel = require("../models/contactModel");
-// console.log(contactmodel)
-// description get all contacts
-// route GET /api/contacts
-// access public
 
 module.exports.getContact = asyncHandler(async function (req, res) {
   const allContacts = await contactmodel.find({user_id:req.user.id});
